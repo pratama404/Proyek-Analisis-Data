@@ -42,9 +42,11 @@ streamlit run app.py
 ## 📂 Struktur File
 ```
 |-- data/                           # Folder untuk dataset CSV
-|-- app.py                          # File utama aplikasi Streamlit
-|-- requirements.txt                 # Daftar dependencies yang dibutuhkan
-|-- README.md                        # Dokumentasi ini
+|-- dashboard/                      # Folder untuk dashboard
+|-- dashboard.py                    # File utama aplikasi Streamlit
+|-- requirements.txt                # Daftar dependencies yang dibutuhkan
+|-- data.csv                        # Dataset untuk streamlit
+|-- README.md                       # Dokumentasi ini
 ```
 
 ## 📊 Sumber Data
@@ -61,4 +63,4 @@ Jika ingin berkontribusi, silakan fork repository ini, buat perubahan, lalu buat
 
 ---
 
-**special: Ageng Putra Pratama 🚀**
+**Special: Ageng Putra Pratama 🚀**
