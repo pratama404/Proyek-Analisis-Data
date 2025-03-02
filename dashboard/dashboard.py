@@ -6,24 +6,34 @@ import folium
 from streamlit_folium import folium_static
 
 # Folder tempat semua file CSV disimpan
-data_folder = "data.csv"
+# data_folder = "data.csv"
+data_file = os.path.join(os.path.dirname(__file__), "data.csv")
 
 # Load semua dataset
-@st.cache_data
 def load_data():
-    all_files = [f for f in os.listdir(data_folder) if f.endswith(".csv")]
-    df_list = []
-    
-    for file in all_files:
-        df = pd.read_csv(os.path.join(data_folder, file))
-        station_name = file.split("_")[2]  # Ambil nama stasiun dari nama file
-        df["station"] = station_name
-        df['date'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
-        df_list.append(df)
-    
-    return pd.concat(df_list, ignore_index=True)
+    if not os.path.exists(data_file):  # Pastikan file ada
+        raise FileNotFoundError(f"File data tidak ditemukan: {data_file}")
+
+    df = pd.read_csv(data_file)
+    df['date'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
+    return df
 
 df = load_data()
+# @st.cache_data
+# def load_data():
+#     all_files = [f for f in os.listdir(data_folder) if f.endswith(".csv")]
+#     df_list = []
+    
+#     for file in all_files:
+#         df = pd.read_csv(os.path.join(data_folder, file))
+#         station_name = file.split("_")[2]  # Ambil nama stasiun dari nama file
+#         df["station"] = station_name
+#         df['date'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
+#         df_list.append(df)
+    
+#     return pd.concat(df_list, ignore_index=True)
+
+# df = load_data()
 
 # Sidebar - Filter Parameter
 st.sidebar.header("Filter Parameter")
