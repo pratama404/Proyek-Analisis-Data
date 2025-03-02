@@ -1,4 +1,6 @@
-pandas
-plotly.express
-folium
-streamlit_folium
+folium==0.19.5
+geopandas==1.0.1
+pandas==2.2.3
+plotly==6.0.0
+streamlit==1.42.2
+streamlit_folium==0.24.0

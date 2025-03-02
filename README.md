@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ### 3. Jalankan Streamlit App
 ```sh
-streamlit run app.py
+streamlit run dashboard.py
 ```
 
 ## 📂 Struktur File
