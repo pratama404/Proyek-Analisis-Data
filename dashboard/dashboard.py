@@ -55,6 +55,7 @@ st.write(f"Analisis **{selected_polutan}** dari tahun **{selected_year[0]}** hin
 # **Line Chart**
 st.subheader("📈 Tren Polutan dari Tahun ke Tahun")
 fig1 = px.line(df_filtered, x="date", y=selected_polutan, color="station", title=f"Tren {selected_polutan} per Tahun")
+fig1.update_yaxes(range=[0, 1000])
 st.plotly_chart(fig1, use_container_width=True)
 
 # **Distribusi Polutan**
