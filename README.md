@@ -2,6 +2,10 @@
 
 Dashboard ini dibuat menggunakan Streamlit untuk menganalisis dan memvisualisasikan data kualitas udara di berbagai stasiun di Beijing dari tahun 2013 hingga 2017. Dataset yang digunakan berasal dari PRSA Data yang mencakup beberapa parameter polusi udara.
 
+# Dashboard Kualitas Udara Beijing
+
+Akses langsung ke dashboard: [Beijing AQI Dashboard](https://beijingaqi.streamlit.app/)
+
 ## 📌 Fitur Utama
 
 ### Filter Interaktif
@@ -25,7 +29,7 @@ Dashboard ini dibuat menggunakan Streamlit untuk menganalisis dan memvisualisasi
 
 ### 1. Clone Repository
 ```sh
-git clone https://github.com/username/repo-name.git
+git clone https://github.com/pratama404/Proyek-Analisis-Data.git
 cd repo-name
 ```
 
