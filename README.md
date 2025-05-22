@@ -63,7 +63,8 @@ Dataset ini berasal dari PRSA Data yang mencakup pengukuran polusi udara dari be
 - Menambahkan fitur analisis berbasis stasiun untuk perbandingan antar wilayah
 
 ## 🤝 Kontribusi
-Jika ingin berkontribusi, silakan fork repository ini, buat perubahan, lalu buat pull request.
+Jika ingin berkontribusi, silakan fork repository ini, buat perubahan, lalu buat pull request. 
+Keep code and learn more Guys ✌️
 
 ---
 
